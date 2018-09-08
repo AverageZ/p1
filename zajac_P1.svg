@@ -1,0 +1,993 @@
+<?xml version="1.0"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 100% 100%">
+
+<defs>
+	<linearGradient id="bodyPanel"
+		x1="10%" y1="40%"
+		x2="40%" y2="100%"
+		spreadMethod="pad">
+		<stop offset="0.1" stop-color="#FFC04C"/>
+		<stop offset="0.3" stop-color="#FFAE19"/>
+		<stop offset="0.6" stop-color="#FFA500"/>
+		<stop offset="1" stop-color="#CC8400"/>
+	</linearGradient>
+
+
+	<radialGradient id="wheelRubber"
+		radius="65%"
+		cx="50%" cy="50%"
+		fx="50%" fy="50%"
+		spreadMethod="pad">
+		<stop offset="0.85" stop-color="#000000"/>
+		<stop offset="1.0" stop-color="#333333"/>
+		<stop offset="1.0" stop-color="#000000"/>
+	</radialGradient>
+
+	<linearGradient id="wheelBrakeDisc"
+		x1="-10%" y1="0%"
+		x2="0%" y2="100%"
+		spreadMethod="pad">
+		<stop offset="0.1" stop-color="#333333"/>
+		<stop offset="0.6" stop-color="#1e1e1e"/>
+		<stop offset="1" stop-color="#808080"/>
+	</linearGradient>
+
+	<radialGradient id="wheelRimOuter"
+		radius="65%"
+		cx="50%" cy="50%"
+		fx="50%" fy="50%"
+		spreadMethod="pad">
+		<stop offset="0.9" stop-color="#A9A9A9"/>
+		<stop offset="0.99" stop-color="#333333"/>
+		<stop offset="1.0" stop-color="#808080"/>
+	</radialGradient>
+
+	<linearGradient id="wheelBrakePad"
+		x1="0%" y1="0%"
+		x2="100%" y2="80%"
+		spreadMethod="pad">
+		<stop offset="0.2" stop-color="#FFAE19"/>
+		<stop offset="0.6" stop-color="#FF4500"/>
+		<stop offset="1" stop-color="#CC8400"/>
+	</linearGradient>
+
+	<linearGradient id="wheelRim"
+		x1="0%" y1="0%"
+		x2="100%" y2="80%"
+		spreadMethod="pad">
+		<stop offset="0.1" stop-color="#A9A9A9"/>
+		<stop offset="0.6" stop-color="#333333"/>
+		<stop offset="1" stop-color="#808080"/>
+	</linearGradient>
+
+	<linearGradient id="rearWingFrontGradient"
+		x1="0%" y1="0%"
+		x2="100%" y2="50%"
+		spreadMethod="pad">
+		<stop offset="0.65" stop-color="#000000"/>
+		<stop offset="0.9" stop-color="#708090"/>
+		<stop offset="1" stop-color="#778899"/>
+	</linearGradient>
+
+	<linearGradient id="rearWingBackGradient"
+		x1="50%" y1="100%"
+		x2="0%" y2="0%"
+		spreadMethod="pad">
+		<stop offset="0.3" stop-color="#333"/>
+		<stop offset="0.8" stop-color="#696969"/>
+		<stop offset="1" stop-color="#778899"/>
+	</linearGradient>
+
+	<linearGradient id="rearWingMetalGradient"
+		x1="100%" y1="0%"
+		x2="0%" y2="0%"
+		spreadMethod="pad">
+		<stop offset="0.2" stop-color="#778899"/>
+		<stop offset="0.5" stop-color="#333"/>
+		<stop offset="0.8" stop-color="#D3D3D3"/>
+		<stop offset="1" stop-color="#A9A9A9"/>
+	</linearGradient>
+
+	<linearGradient id="bodyPanel4Gradient"
+		x1="0%" y1="0%"
+		x2="0%" y2="100%"
+		spreadMethod="pad">
+		<stop offset="0.1" stop-color="#0d0d0d"/>
+		<stop offset="0.5" stop-color="#222222"/>
+		<stop offset="1" stop-color="#808080"/>
+	</linearGradient>
+
+	<radialGradient id="bodyPanel5Highlight"
+		radius="65%"
+			cx="70%" cy="90%"
+			fx="110%" fy="100%"
+		spreadMethod="pad">
+		<stop offset="0.7" stop-color="#FAFAD2" stop-opacity="1"/>
+		<stop offset="0.99" stop-color="0d0d0d" stop-opacity="0.6"/>
+	</radialGradient>
+
+	<linearGradient id="bodyPanel7WindowShineGradient"
+		x1="0%" y1="0%"
+		x2="100%" y2="50%"
+		spreadMethod="pad">
+		<stop offset="0.2" stop-color="#fff" stop-opacity="0"/>
+		<stop offset="0.7" stop-color="#0d0d0d" stop-opacity="0.6"/>
+	</linearGradient>
+
+	<linearGradient id="highlightFade"
+		x1="0%" y1="0%"
+		x2="100%" y2="50%"
+		spreadMethod="pad">
+		<stop offset="0.2" stop-color="#FFFACD" stop-opacity="0"/>
+		<stop offset="0.7" stop-color="#FFFACD" stop-opacity="0.7"/>
+	</linearGradient>
+
+	<linearGradient id="highlightFade2"
+		x1="50%" y1="0%"
+		x2="100%" y2="100%"
+		spreadMethod="pad">
+		<stop offset="0.1" stop-color="#FFFACD" stop-opacity="0.1"/>
+		<stop offset="1" stop-color="#FFFACD" stop-opacity="0.8"/>
+	</linearGradient>
+
+	<linearGradient id="windowGradient"
+		x1="0%" y1="0%"
+		x2="90%" y2="100%"
+		spreadMethod="pad">
+		<stop offset="0.3" stop-color="#A9A9A9"/>
+		<stop offset="0.9" stop-color="#1e1e1e"/>
+		<stop offset="1" stop-color="#333333"/>
+	</linearGradient>
+
+
+	<pattern id="meshPattern" x="0" y="0"
+		width="5" height="5"
+		patternUnits="userSpaceOnUse">
+
+		<rect x="0" y="0" width="100%"
+			height="100%" fill="#0d0d0d"
+			fill-opacity="0.5"/>
+		<path d="M0,2 2,5 5,2 2,0 0,20 Z"
+			stroke="#708090" stroke-opacity="0.3"
+			fill="none"/>
+	</pattern>
+
+	<g id="wheelRimNuts">
+		<circle cx="65" cy="75" r="5"
+		fill="inherit" stroke="black" stroke-width="5"/>
+		<circle cx="35" cy="75" r="5"
+		fill="inherit" stroke="black" stroke-width="5"/>
+		<circle cx="50" cy="25" r="5"
+		fill="inherit" stroke="black" stroke-width="5"/>
+		<circle cx="25" cy="47" r="5"
+		fill="inherit" stroke="black" stroke-width="5"/>
+		<circle cx="75" cy="47" r="5"
+		fill="inherit" stroke="black" stroke-width="5"/>
+	</g>
+
+	<g id="carBody">
+		<!--cockpit-->
+		<path d="M150,132 C240,89 280,86 380,122
+				L410,132 200,160 140,135 Z"
+			stroke="none"
+			fill="#0d0d0d"/>
+
+
+		<!--car outline-->
+		<path d="M40,167 39,166
+				C120,125 140,132 180,138
+				C190,140 220,141 240,140
+				C380,122 419,121 450,126
+				C476,132 479,135 481,141
+				L481,141 476,146 480,147 478,155
+				C482,158 488,159 483,167
+				C483,167 475,190 465,190
+				L465,192 450,200 60,203 Q38,200 35,195
+				L35,195 Q40,195 43,196
+				L43,196 41,189 41,172 42,170 43,169 Q42,167 40,167"
+			stroke="none"
+			fill="#0d0d0d"/>
+
+		<path d="M484,165 480,180 487,170
+				C487,168 481,195 468,200
+				L450,200 Z"
+			stroke="none" fill="black"/>
+		<path d="M495,150 487,170
+				C487,168 481,190 468,200
+				L465,200 Z"
+			stroke="none" fill="#708090"
+			transform="translate(190,80) scale(0.6)"
+			fill-opacity="0.4"/>
+
+		<path d="M95,112
+				C95,112 49,107 105,125
+				C105,125 115,130 140,120
+				C140,120 115,130 100,120 Z"
+			transform="scale(0.6) translate(-20,211)"/>
+
+
+	</g>
+
+	<g id="brakes">
+		<!--Brakedisc-->
+		<circle cx="200" cy="500" r="30"
+			fill="#0d0d0d" />
+
+		<!--Brakedisc shadow-->
+		<circle cx="200" cy="500" r="35"
+			fill="#0d0d0d"
+			fill-opacity="0.9"/>
+
+		<!--Brake Pad-->
+		<path d="M206,530 225,483
+			C228,485 230,489 232,496
+			C233,497 224,502 230,512
+			C227,517 222,510 220,526
+			C219,526 218,530 206,530"
+			stroke="none"
+			fill="url(#wheelBrakePad)"/>
+
+		<path d="M206,530 225,483 Q232,478 224,498
+			C226,505 223,510 219,516
+			L215,519 210,530 Q206,534 206,530"
+			stroke="black"
+			stroke-opacity="0.1"
+			fill="url(#wheelBrakePad)"/>
+	</g>
+
+	<!--Wheels-->
+	<g id="wheelAndTire">
+	<!--rubber-->
+		<circle cx="200" cy="500" r="50"
+			stroke="url(#wheelRubber)"
+			stroke-width="13"
+			fill="none" />
+
+
+
+		<!--Rim #Outer-->
+		<circle cx="200" cy="500" r="39"
+			stroke="url(#wheelRimOuter)"
+			stroke-opacity="1"
+			stroke-width="9" fill="none"/>
+
+		<!--Rim 10 point star-->
+		<path  d="M179,187 L191,216
+				L183,185 L210,201
+				L186,181 L218,179
+				L186,176 L210,156
+				L183,172 L191,141
+				L179,171 L166,141
+				L174,172 L147,156
+				L171,176 L140,179
+				L171,181 L147,201
+				L174,185 L166,216
+				L179,187 Z"
+				transform="translate(22,321)"
+				fill="url(#wheelRim)">
+
+		</path>
+
+		<!--Rim Inner circle-->
+		<circle cx="200" cy="500" r="10"
+			fill="url(#wheelRim)" />
+
+		<use xlink:href="#wheelRimNuts" fill="black"
+			transform="translate(187,486.5) scale(0.25)" opacity="0.5">
+		</use>
+		<animateTransform attributeName="transform"
+			type="rotate" from="0 200 500" to="-360 200 500"
+			dur="0.5s" repeatCount="indefinite"/>
+	</g>
+
+	<!--Rear Wing-->
+	<g id="rearWingBack">
+		<path d="M100,95 100,80 Q100,80 95,73
+				L55,55 Q45,50 45,48 Q45,44 55,46
+				L60,47 Q110,30 150,30
+				L145,60 Q150,70 130,80
+				L130,95 Z"
+			stroke="none" fill="url(#rearWingBackGradient)"/>
+	</g>
+
+	<g id="rearWingFront">
+		<path d="M145,110 Q145,65 115,57
+				Q110,50 170,40
+				Q200,35 220,40
+				Q230,50 200,70
+				L202,71 180,85
+				180,110 Z"
+			stroke="url(#wheelBrakeDisc)" fill="url(#rearWingFrontGradient)"/>
+	</g>
+
+	<rect id="rearWingMetalPillar" x="136" y="146" width="10" height="50"
+		fill="url(#rearWingMetalGradient)" stroke="black"
+		transform="rotate(29 140 140)" />
+
+	<g id="rearWingMetalPartsFront">
+		<use xlink:href="#rearWingMetalPillar" />
+		<use xlink:href="#rearWingMetalPillar"
+			transform="translate(75,70) scale(0.6)"/>
+		<use xlink:href="#rearWingMetalPillar"
+				transform="translate(82,30) scale(0.8)"/>
+
+		<path d="M203,137 190,130 180,150
+				175,150 175,130 180,125
+				180,115 175,110 162,110
+				162,140 Q145,125 140,130
+				L133,142 160,160 182,160
+				188,150 195,153 Z"
+		fill="url(#wheelRimOuter)" stroke="url(#wheelBrakeDisc)"/>
+
+		<path d="M203,137 190,130 180,150
+				175,150 175,130 180,125
+				180,115 175,110 162,110
+				162,140 Q145,125 140,130
+				L133,142 160,160 182,160
+				188,150 195,153 Z"
+		fill="url(#rearWingFrontGradient)" stroke="black"
+		fill-opacity="0.5"/>
+
+
+		<circle cx="165" cy="152" r="4" fill="black" />
+		<circle cx="162" cy="145" r="2" fill="black" />
+	</g>
+
+	<g id="rearWingMetalPartsBack">
+		<use xlink:href="#rearWingMetalPillar" />
+		<use xlink:href="#rearWingMetalPillar"
+			transform="translate(75,70) scale(0.6)"/>
+		<use xlink:href="#rearWingMetalPillar"
+				transform="translate(82,30) scale(0.8)"/>
+
+		<path d="M203,137 190,130 180,150
+				175,150 175,130 180,125
+				180,115 175,110 162,110
+				162,140 Q145,125 140,130
+				L133,142 160,160 182,160
+				188,150 195,153 Z"
+		fill="url(#wheelRimOuter)" stroke="url(#wheelBrakeDisc)"/>
+
+		<path d="M203,137 190,130 180,150
+				175,150 175,130 180,125
+				180,115 175,110 162,110
+				162,140 Q145,125 140,130
+				L133,142 160,160 182,160
+				188,150 195,153 Z"
+		fill="url(#rearWingFrontGradient)" stroke="black"
+		fill-opacity="0.7"/>
+
+
+		<circle cx="165" cy="152" r="4" fill="#000000" />
+		<circle cx="162" cy="145" r="2" fill="#000000" />
+	</g>
+
+	<g id="carDetail">
+		<g id="headLight">
+			<path d="M50,161
+					C75,150 110,135 65,172
+					C65,172 84,153 50,161"
+				stroke="#696969" fill="#808080" transform="scale(2)"/>
+			<path d="M65,148
+					C75,150 105,140 65,172
+					C65,172 81,153 65,148"
+				stroke="#696969" fill="url(#wheelBrakePad)"
+				transform="translate(68,170)"/>
+			<path d="M45,162
+				C75,150 105,142 65,175
+				C75,170 95,143 50,162 Z"
+			stroke="#696969" fill="#DCDCDC" transform="translate(87,147)"/>
+			<path d="M120,85
+					C120,85 200,40 290,27
+					C290,27 150,70 150,82"
+				stroke="none" fill="#FFFACD"
+				fill-opacity="0.6"
+				transform="translate(-20,235)"/>
+		</g>
+		<g id="bodyPanelGrill">
+			<path d="M40,155 40,195 45,210
+					C45,210 55,214 75,210
+					C70,210 50,200 92,160
+					L120,120 Q25,140 46,145 Z"
+				stroke="black" fill="url(#rearWingBackGradient)"
+				fill-opacity="0.6"/>
+			<path d="M40,155 40,195 45,210
+					48,190 55,150 Q50,120 40,155"
+				stroke="none" fill="#F5F5F5"
+				fill-opacity="0.1"/>
+			<path d="M41,153 Q50,148 110,140"
+				stroke="#0d0d0d" stroke-width="1"
+				fill="none"/>
+			<path d="M41,153 Q50,148 110,140"
+				stroke="#0d0d0d" stroke-width="1"
+				fill="none" transform="translate(3,-4)"/>
+			<path d="M41,153 Q105,130 110,140 Z"
+				stroke="#none" fill="#0d0d0d"
+				transform="translate(3,-7)"
+				fill-opacity="0.9"/>
+		</g>
+		<g id="bodyPanelFront1Under">
+			<path d="M73,188
+					C41,230 20,255 125,246
+					C140,245 110,190 155,150"
+				stroke="black" fill="url(#wheelBrakeDisc)"
+				transform="translate(170,420)"/>
+		</g>
+		<g id="bodyPanelFront1">
+			<path d="M73,188
+					C41,230 20,255 125,248
+					L125,248 110,230 Q105,220
+					130,170 C130,170 190,100
+					255,145 L250,110 Q250,102
+					205,108 C205,108 150,108 15,178
+					L60,170 Q100,160 73,188"
+				stroke="black" fill="url(#bodyPanel)"
+				transform="translate(170,420)"/>
+			<path d="M73,188 Q20,220 40,248
+					L55,250 C55,250 28,240 73,188"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.8"
+				transform="translate(170,420)"/>
+			<path d="M130,110
+					C130,110 176,76 223,109
+					L218,79 C218,79 170,70 130,110"
+				stroke="none" fill="url(#highlightFade)"
+				fill-opacity="0.7"
+				transform="translate(200,450)"/>
+		</g>
+		<g id="headLightShadow">
+			<path d="M100,112
+					C100,111 100,120 140,112
+					C138,110 115,100 100,112 Z"
+			stroke="none" fill="#0d0d0d"
+			fill-opacity="0.8"/>
+		</g>
+
+		<g id="frontLipHighlight">
+			<path d="M95,112
+					C105,112 48,105 105,125
+					C105,125 115,128 142,128
+					C140,130 115,125 95,115
+					Z"
+			stroke="#fff" fill="#fff"
+			fill-opacity="0.2" stroke-opacity="0.2"/>
+
+		</g>
+
+		<g id="bodyPanel2">
+			<path d="M255,145 250,108
+					C250,105 260,105 350,118
+					C350,118 380,125 480,118
+					C480,118 520,112 630,99
+					C630,99 635,105 630,120
+					C630,120 380,145 315,180
+					L284,185
+					C285,185 274,160 254,145"
+			stroke="black" fill="url(#bodyPanel)"
+			stroke-opacity="0.5"/>
+		</g>
+
+		<g id="bodyPanel2Highlight">
+			<path d="M630,120
+					C630,120 380,145 315,180
+					C315,180 305,150 630,120"
+			stroke="none" fill="#F0E68C" fill-opacity="0.6"/>
+		</g>
+
+		<g id="bodyPanel3">
+			<path d="M115,110 143,106
+					C145,106 155,140 180,150
+					C180,150 200,175 380,140
+					C380,140 371,148 372,160
+					C372,160 371,165 370,170
+					L110,173
+					C110,173 125,150 115,110"
+				stroke="black" fill="url(#bodyPanel)"/>
+			<path d="M110,172 370,169 370,175
+					110,175 Z"
+				stroke="none" fill="#E59400"/>
+			<path d="M110,173
+					C110,173 125,150 115,110
+					L143,106 Q145,110 121,112
+					C121,112 130,150 110,173"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.2"/>
+			<path d="M143,106
+					C145,106 155,140 180,150
+					C180,152 200,177 377,142"
+				stroke="#FFFACD" fill="none"
+				stroke-opacity="0.8"/>
+			<path d="M122,114 142,110 Q145,115
+					122,118 Z"
+				stroke="none" fill="#FFFACD"
+				fill-opacity="0.5"/>
+		</g>
+
+		<g id="bodyPanelSideLip">
+			<path d="M110,180
+					C110,180 400,182 600,177
+					L598,160 170,176 145,162
+					110,170 Q103,180 110,180"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.4" transform="translate(5,-3)"/>
+
+			<path d="M110,180
+					C110,180 400,182 610,177
+					L605,172 170,176 145,162
+					110,170 Q103,180 110,180"
+				stroke="#808080" fill="url(#rearWingBackGradient)"
+				fill-opacity="1"/>
+		</g>
+
+		<g id="bodyPanel4">
+			<path d="M143,106
+					C145,106 155,140 180,150
+					C180,150 200,175 380,140
+					C380,140 475,120 515,40
+					C515,40 320,40 140,100 Z"
+				stroke="none" fill="url(#bodyPanel4Gradient)"
+				fill-opacity="0.6"/>
+			<path d="M143,106
+					C145,106 155,140 180,150
+					C180,150 200,175 390,135
+					C390,135 400,130 390,120
+					C390,120 360,100 230,74
+					L222,76 Q360,100 380,125
+					C200,130 230,145 143,106"
+				stroke="none" fill="#FFFFE0"
+				fill-opacity="0.1"/>
+
+			<path d="M360,142 Q420,130
+					445,112 Q430,112 400,107
+					L360,98 Q370,105 350,103
+					C350,103 445,125 360,140
+					L350,144 Z"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.65"/>
+
+			<path d="M143,106
+					C145,106 155,140 180,150
+					C180,150 190,160 230,160
+					C230,160 180,165 150,102 Z"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.7"/>
+
+			<path d="M160,120 Q165,130 180,140
+					C180,140 190,140 190,135
+					C190,135 180,125 160,120"
+				stroke="none" fill="#FFFFE0"
+				fill-opacity="0.2"/>
+			<path d="M240,72 Q330,90 420,110
+					C420,110 440,115 450,110
+					C470,100 440,105 240,72"
+				stroke="none" fill="#FFFFE0"
+				fill-opacity="0.1"/>
+			<path d="M375,143 Q398,125 402,115
+					C402,115 415,110 420,95
+					L456,40"
+				stroke="#0d0d0d" fill="none"
+				stroke-width="1.5"/>
+		</g>
+
+		<g id="bodyPanel5">
+			<path d="M380,140 Q475,118 517,40
+					C517,40 580,42 622,64
+					C615,65 585,115 605,172
+					L375,174 Q373,170 375,163
+					C375,163 373,158 381,141 Z"
+				stroke="none" fill="url(#bodyPanel)"
+				fill-opacity="1"/>
+
+			<path d="M360,160 Q470,160 580,145
+					C580,145 550,130 360,160"
+				stroke="none" fill="url(#bodyPanel5Highlight)"/>
+
+			<path d="M380,140 Q475,118 517,40
+					C517,40 519,39 525,40
+					C525,40 480,130 380,140"
+				stroke="none" fill="#FAFAD2"
+				fill-opacity="0.8"/>
+		</g>
+
+		<g id="bodyPanel6">
+			<path d="M146,19.5 310,5
+					C310,5 435,-6 500,22
+					C500,22 510,18 520,40
+					C520,40 520,60 502,35
+					C502,35 490,35 475,45
+					C475,45 470,50 480,55
+					L520,78
+					C520,79 535,82, 525,100
+					C525,100 510,160 468,160
+					C468,160 480,42 381,37
+					C380,37 346,32 308,62
+					C307,62 240,30 145,39
+					C146,40 150,31 146,19"
+				stroke="#FFFACD" fill="url(#bodyPanel)"
+				stroke-opacity="0.2"/>
+			<path d="M502,35
+					C502,35 490,35 475,45
+					C470,45 500,25 502,35"
+				stroke="none" fill="#DCDCDC"
+				fill-opacity="0.8"
+				transform="translate(0,-1)"/>
+
+			<path d="M510,45 Q527,53 515,30
+					C515,30 525,45 510,45"
+				stroke="none" fill="#DCDCDC"
+				fill-opacity="0.5"/>
+			<path d="M490,60 517,55 512,72
+					C512,72 507,68 490,60"
+				stroke="none" fill="#DCDCDC"
+				fill-opacity="0.3"/>
+			<path d="M502,35
+					C502,35 490,35 478,41
+					C478,44 459,48, 509,70
+					C509,70 510,50 510,45
+					C510,45 502,35 502,35 Z"
+				stroke="none" fill="url(#meshPattern)"
+				transform="translate(0,1)"/>
+			<path d="M300,62
+					C306,58 370,2 442,54
+					L435,56
+					C435,56 375,8 308,62 Z"
+				stroke="#FFFACD" fill="#0d0d0d"
+				stroke-opacity="0.3" fill-opacity="0.2"/>
+			<path d="M440,54 433,56
+					C435,56 449,68 458,90
+					L461,81
+					C461,81 450,60 440,54"
+				stroke="#000" fill="#8B0000"
+				stroke-opacity="0.6"/>
+			<path d="M503,33
+					C500,33 505,23 516,43
+					C516,43 507,50 503,33"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.2"/>
+			<path d="M445,10
+					C450,10 480,12 500,21
+					C500,21 480,23 450,14"
+				stroke="none" fill="#0d0d0d"
+				fill-opacity="0.4"/>
+		</g>
+
+		<g id="bodyPanel7">
+			<path d="M67,109 246,93
+					C246,93 110,42 40,36
+					C40,36 45,40 47,50 L46,51
+					C46,51 57,65 60,95 L61,97
+					C61,97 60,100 67,109"
+				stroke="black" fill="url(#bodyPanel)"
+				stroke-opacity="0.4"/>
+			<path d="M61,97 135,88
+					C135,88 160,86 140,78
+					C120,70 80,55 46,51
+					C46,51 57,65 60,95 Z"
+				stroke="none" fill="url(#highlightFade)"
+				fill-opacity="0.2"
+				transform="scale(1.4) translate(-14,-20)"/>
+			<path d="M246,93
+					C246,93 200,75 140,58
+					C140,58 200,83 240,95
+					C240,95 240,95 246,93"
+				stroke="none" fill="#FFFACD"
+				fill-opacity="0.5"/>
+			<path d="M59,97 135,88
+					C135,88 160,86 140,78
+					C120,70 80,55 46,51
+					C46,51 57,65 60,95 Z"
+				stroke="none" fill="url(#rearWingBackGradient)"
+				stroke-opacity="0.6"
+				transform="scale(1.1) translate(-4,-7)"/>
+			<path d="M60,97 135,88
+					C135,88 160,86 140,78
+					C120,70 80,55 46,51
+					C46,51 57,65 60,95 Z"
+				stroke="black" fill="url(#rearWingBackGradient)"
+				stroke-opacity="0.7"/>
+			<path d="M60,97 135,88
+					C135,88 160,86 140,78
+					C120,70 80,55 46,51
+					C46,51 57,65 60,95 Z"
+				stroke="none" fill="#windowGradient"
+				stroke-opacity="0.7" fill-opacity="0.5"
+				transform="scale(0.35) translate(273,155)"/>
+		</g>
+
+		<g id="bodyPanel8">
+
+			<path d="M165,130 148,182
+					C148,182 120,184 95,176
+					C95,176 86,168 165,130.5"
+				stroke="none" fill="url(#rearWingBackGradient)"/>
+			<path d="M165,130 148,182
+					C148,182 120,184 95,176
+					C95,176 86,168 165,130.5"
+				stroke="black" fill="url(#windowGradient)" />
+			<path d="M165,130 148,182
+					C148,182 120,184 95,176
+					C95,176 86,168 165,130.5"
+				stroke="url(#rearWingBackGradient)" fill="none"
+				fill-opacity="0.6" stroke-width="2"
+				transform="scale(0.9) translate(17,18)"/>
+			<path d="M172,129 155,182
+					L148,182 165,130 Z"
+				stroke="black" fill="#333333"
+				stroke-opacity="0.7"/>
+			<path d="M168,129 150,182
+					L148,182 165,130 Z"
+				stroke="black" fill="#333333"
+				stroke-opacity="0.5"/>
+
+			<path d="M351,98
+					C351,98 280,84 190,107 L181,115
+					C182,115 150,125 60,170
+					C60,170 50,176 35,178
+					C35,178 120,190 140,191
+					C140,191 180,195 250,188
+					C250,188 300,182 380,172
+					C380,172 375,165 374,162
+					C374,162 160,195 98,177
+					C98,177 90,176 98,170
+					C98,170 190,85 358,111
+					C358,111 358,105 351,98 Z"
+				stroke="black" fill="url(#bodyPanel)"
+				stroke-opacity="0.5"/>
+
+			<path d="M374,162
+					C374,162 160,195 98,177
+					C98,177 90,176 98,170
+					C98,170 190,85 358,111
+					C358,111 240,65 65,176
+					C65,176 180,212 374,162"
+				stroke="none" fill="url(#highlightFade2)"
+				fill-opacity="1"/>
+
+			<path d="M171,129
+					C170,129 240,95 358,110
+					C358,110 375,130 372,160
+					C372,160 240,185 154,182 Z"
+				stroke="#0d0d0d" fill="url(#rearWingBackGradient)"/>
+			<path d="M171,129
+					C170,129 240,95 358,110
+					L368,125 360,162
+					C360,162 200,190 154,182 Z"
+				stroke="#0d0d0d" fill="url(#rearWingBackGradient)"
+				transform="scale(0.9) translate(29,17)"/>
+			<path d="M171,129
+					C170,129 240,95 358,110
+					L368,125 360,162
+					C360,162 200,190 154,182 Z"
+				stroke="#0d0d0d" fill="url(#windowGradient)"
+				transform="scale(0.9) translate(23,17)"/>
+		</g>
+
+		<g id="sideMirror">
+			<ellipse cx="25" cy="7" rx="25" ry="7"
+				fill="#0d0d0d" fill-opacity="0.3"
+				transform="rotate (10 0 0) translate(270,120)"/>
+			<path d="M268,180
+					C268,180 250,155 245,155
+					L254,154 C250,153 230,145 255,134
+					C255,135 260,130 278,132
+					C278,132 285,140 277,154
+					L270,156 C270,159 255,150 275,178"
+				stroke="none" fill="url(#bodyPanel)"/>
+			<path d="M275,135
+					C275,135 230,145 275,145
+					C275,145 280,140 275,135"
+				stroke="none" fill="#FFFACD"
+				fill-opacity="0.6"/>
+		</g>
+
+		<g id="windshield">
+			<path d="M108,120
+					C108,120 190,80 255,65
+					L250,80 C250,80 260,140 108,120"
+				stroke="none" fill="url(#windowGradient)"
+				fill-opacity="0.8"/>
+			<path d="M100,120
+					C100,120 113,113 140,117
+					C140,117 110,118 100,120"
+				stroke="url(#rearWingBackGradient)" fill="none"
+				stroke-width="3"/>
+		</g>
+
+	</g>
+
+
+	<!--Entire Car-->
+	<g id="entireCar">
+
+		<use xlink:href="#rearWingMetalPartsBack"
+			transform="translate(1011,375) scale(0.35)"/>
+
+		<use xlink:href="#rearWingMetalPartsFront"
+			transform="translate(1025,363) scale(0.45)"/>
+
+		<use xlink:href="#rearWingBack"
+			transform="translate(1002,364) scale(0.6)" />
+
+		<use xlink:href="#rearWingFront"
+			transform="translate(1002,355) scale(0.6)"/>
+
+		<use xlink:href="#carBody"
+			transform="translate(250,200) scale(1.8)" />
+
+		<!--frontBrakes-->
+		<use xlink:href="#brakes"
+			transform="translate(277,23)" />
+
+		<use xlink:href="#brakes"
+			transform="translate(780,-35) scale(1.10) rotate(145 200 500 )"/>
+
+		<!--Back Tire-->
+		<use xlink:href="#wheelAndTire"
+			transform="translate(780,-35) scale(1.10) rotate(145 200 500 )"/>
+
+		<!--Front tire-->
+		<use xlink:href="#wheelAndTire"
+			transform="translate(277,23)" />
+
+		<use xlink:href="#windshield"
+			transform="translate(400,320)" />
+
+		<use xlink:href="#bodyPanelGrill"
+			transform="translate(292,385) scale(0.8)" />
+
+		<use xlink:href="#bodyPanelFront1Under"
+			transform="translate(175,20) scale(0.8)" />
+
+		<use xlink:href="#bodyPanelFront1"
+			transform="translate(175,20) scale(0.8)" />
+
+		<use xlink:href="#headLightShadow"
+			transform="translate(265,400) scale(0.8)" />
+
+		<use xlink:href="#frontLipHighlight"
+			transform="translate(250,460) scale(0.8)" />
+
+		<use xlink:href="#headLight"
+			transform="translate(265,232) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel8"
+			transform="translate(500,300) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel2"
+			transform="translate(312,356) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel2Highlight"
+			transform="translate(312,356) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel3"
+			transform="translate(450,420) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel5"
+			transform="translate(448,420) scale(0.8)" />
+
+		<use xlink:href="#bodyPanelSideLip"
+			transform="translate(450,420) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel4"
+			transform="translate(450,420) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel7"
+			transform="translate(750,350) scale(0.8)" />
+
+		<use xlink:href="#bodyPanel6"
+			transform="translate(700,420) scale(0.8)" />
+
+		<use xlink:href="#sideMirror"
+			transform="translate(400,320) scale(0.8)" />
+
+
+	</g>
+
+
+	<linearGradient id="backgroundRoad"
+		x1="0%" y1="0%"
+		x2="0%" y2="100%"
+		spreadMethod="pad">
+		<stop offset="0.1" stop-color="#0d0d0d"/>
+		<stop offset="0.3" stop-color="#696969"/>
+		<stop offset="0.6" stop-color="#333333"/>
+	</linearGradient>
+
+	<pattern id="backgroundFence" x="0" y="0"
+		width="100" height="300"
+		patternUnits="userSpaceOnUse">
+		<rect x="0" y="0" width="20" height="300"
+			fill="#A0522D"/>
+		<rect x="0" y="0" width="20" height="300"
+			fill="url(#rearWingBackGradient)"
+			fill-opacity="0.6"/>
+		<animate attributeName="x" from="-150" to="50"
+		begin="0s" dur="0.2s" repeatCount="indefinite"/>
+	</pattern>
+
+	<pattern id="backgroundRoadLines" x="0" y="0"
+		width="100" height="300"
+		patternUnits="userSpaceOnUse">
+		<path d="M0,70 60,70
+				65,80 5,80 Z"
+				fill="#DCDCDC" />
+
+		<animate attributeName="x" from="-150" to="50"
+		begin="0s" dur="0.2s" repeatCount="indefinite"/>
+	</pattern>
+
+	<g id="background">
+
+		<rect x="0" y="0" width="100%" height="100%"
+			fill="#00BFFF" fill-opacity="0.1"/>
+
+		<path d="M-300,350
+				C-300,350 500,320 1920,350
+				L1920,1000 0,1000 -300,350"
+			fill="#6B8E23" fill-opacity="0.7"/>
+
+		<rect x="0" y="450" width="100%" height="300"
+			fill="url(#backgroundFence)"/>
+
+		<path d="M-300,550
+				C-300,550 500,520 1920,550
+				L1920,1000 0,1000 -300,550"
+			fill="url(#backgroundRoad)"/>
+
+		<path d="M-300,550
+				C-300,550 500,520 1920,550
+				L1920,1000 0,1000 -300,550"
+			fill="url(#windowGradient)"
+			fill-opacity="0.4"/>
+
+		<rect x="0" y="485" width="100%" height="20"
+			fill="url(#windowGradient)" />
+		<rect x="0" y="460" width="100%" height="20"
+			fill="url(#windowGradient)" />
+		<rect x="0" y="510" width="100%" height="20"
+			fill="url(#windowGradient)" />
+
+		<rect x="0" y="600" width="100%" height="300"
+			fill="url(#backgroundRoadLines)"/>
+
+		<text x="100" y="100" fill="#0d0d0d"
+			font-family="verdana"
+			font-size="40"
+			font-style="italic">McLaren</text>
+		<text x="70" y="230" fill="url(#bodyPanel)"
+			font-family="arial"
+			font-size="170"
+			font-style="italic"
+			font-weight="800"
+			letter-spacing="-10">P1</text>
+		<text x="70" y="260" fill="#0d0d0d"
+			fill-opacity="0.6"
+			font-family="sans-serif"
+			font-size="20"
+			font-style="italic">by Alex Zajac</text>
+
+	</g>
+
+</defs>
+
+	<use xlink:href="#background"/>
+
+
+	<use xlink:href="#entireCar"
+		transform="translate(50, -60) scale(1.2)">
+
+		<animate id="a1" attributeName="x" from="1200" to="50"
+		begin="0s;a4.end" dur="5s" fill="freeze"/>
+
+		<animate id="a2" attributeName="x" from="50" to="-100"
+		begin="5s;a1.end" dur="2s" fill="freeze"/>
+
+		<animate id="a3" attributeName="x" from="-100" to="-150"
+		begin="7s;a2.end" dur="2s" fill="freeze"/>
+
+		<animate id="a4" attributeName="x" from="-150" to="-3000"
+		begin="9s;a3.end" dur="5s" fill="freeze"/>
+	</use>
+
+
+</svg>
